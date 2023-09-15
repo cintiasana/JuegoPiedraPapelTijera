@@ -4,105 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Link para CSS-->    
     <link rel="stylesheet" href="assets/css/style.css">
 
+<!-- Link tipo de letra = font google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
+<!-- Link para animacion de titulo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-
+<!-- link de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+<!-- Titulo pestaña-->
     <title>Piedra, Papel o Tijera</title>
+
 </head>
+
 <body>
+<!--Video de fondo de pantalla-->
     <video src="assets/img/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
 
+<!-- Titulo Principal de la pagina con la animacion-->    
     <h1 class="animate__animated animate__wobble">Desafio Piedra, Papel o Tijera...</h1>
-    <div class="img">
-      <img id="imgPrincipal" src="assets/img/piedraPapelTijera.png" alt="piedra-Papel-Tijera" >
-<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/YPy2La2THM4?si=nE9jv9U0x879PM1q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
-    </div>
+<!-- Imagen de inicio-->
+      <div class="img">        
+        <img id="imgPrincipal" src="assets/img/piedraPapelTijera.png" alt="piedra-Papel-Tijera" >
+<!-- VIDEO DE YOUTUBE
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YPy2La2THM4?si=nE9jv9U0x879PM1q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+      </div>
     
-    <div class="container text-center">
+      <div class="container text-center">
+<!-- Una fila con 3 columnas-->        
         <div class="row">
+<!-- Primera columna-->          
           <div class="col">
-            
+            <!--columna vacia-->
           </div>
+<!-- Segunda columna-->          
           <div id="inicio" class="col">
+<!-- Formulario para ingresar el nombre-->            
             <form>
                 <label >Ingresa tu Nombre:
                     <input type="text" id="NomJugador" required>
                 </label>
-                
             </form>
             <br>
+<!-- Boton Jugar para iniciar-->            
             <button id="btnNomJugador">Jugar</button>
           </div>
+<!-- Tercera columna-->          
           <div class="col">
-            
+            <!--columna vacia-->
           </div>
         </div>
       </div>
+
+<!-- Saludo inicial de bienvenida-->      
       <div id="saludo">
         <strong><p>Bienvenido/a <span id="idJugador" >jugador/a</span>, vamos a comenzar el juego...</p></strong>
         <p>Elige una opción:</p>
-      
-      <label>Piedra
-        <img id="imgPiedra" src="assets/img/piedra2.jpg" alt="" width="25%" height="25%">
-        <input type="radio" id="btnPiedra" name="opcion">
-      </label>
-
-      <label>Papel
-        <img id="imgPapel" src="assets/img/papel2.jpg" alt="" width="25%" height="25%">
-        <input type="radio" id="btnPapel" name="opcion">
-      </label>
-
-
-      <label>Tijera
-        <img id="imgTijera" src="assets/img/tijera2.jpg" alt="" width="25%" height="25%">
-        <input type="radio" id="btnTijera" name="opcion">
-      </label>
-      <button type="button" id="btnSeleccionar" >Seleccionar</button>
-
+<!-- Primera opcion para elegir= Piedra-->      
+        <label>Piedra
+          <img id="imgPiedra" src="assets/img/piedra2.jpg" alt="" width="25%" height="25%">
+          <input type="radio" id="btnPiedra" name="opcion">
+        </label>
+<!-- Segunda opcion para elegir = Papel-->
+        <label>Papel
+          <img id="imgPapel" src="assets/img/papel2.jpg" alt="" width="25%" height="25%">
+          <input type="radio" id="btnPapel" name="opcion">
+        </label>
+<!-- Tercera opcion para elegir = Tijera-->
+        <label>Tijera
+          <img id="imgTijera" src="assets/img/tijera2.jpg" alt="" width="25%" height="25%">
+          <input type="radio" id="btnTijera" name="opcion">
+        </label>
+<!-- Boton para seleccionar-->
+        <button type="button" id="btnSeleccionar" >Seleccionar</button>
       </div>
-        
-        <!-- <div id="opcionElegida">
-        <p>Tú elegiste <span id="opElegida">opcionElegida</span></p>
-        <img id="imgPiedra" src="assets/img/piedra2.jpg" alt="" width="10%" height="10%">
-        <p>Computadora Elige <span id="opcionPC" >PcElige</span></p>
 
-      </div>-->
 
+<!-- MUESTRA LAS OPCIONES ELEGIDAS POR EL USUARIO Y LA PC-->
       <div id="opcionElegida" class="container text-center">
+<!-- Una fila y tres columnas-->        
         <div class="row">
+<!-- Primera columna vacia-->          
           <div class="col-1">
-            
+            <!-- columna vacia-->
           </div>
-
+<!-- Segunda columna-->
           <div class="col-5">
+<!-- MUESTRA LA ELECCION DEL USUARIO-->            
             <p>Tú elegiste <span id="opElegida">opcionElegida</span></p>
+<!-- Las imagenes estan ocultas, solo aparece la que se selecciona-->
+        <!-- imagen de piedra-->            
             <img class="imgTarjetas" id="imgPiedra2" src="assets/img/piedra2.jpg" alt="" width="45%" height="70%">
+        <!-- imagen de papel-->    
             <img class="imgTarjetas" id="imgPapel2" src="assets/img/papel2.jpg" alt="" width="45%" height="70%">
+        <!-- imagen de tijera-->    
             <img class="imgTarjetas" id="imgTijera2" src="assets/img/tijera2.jpg" alt="" width="45%" height="70%">
           </div>
-            
+
+<!-- MUESTRA LA ELECCION DEL USUARIO-->           
           <div class="col-5">
             <p>Computadora Elige <span id="opcionPC" >PcElige</span></p>
+<!-- Las imagenes estan ocultas, solo aparece de forma aleatoria--> 
+        <!-- imagen de piedra-->     
             <img class="imgTarjetas" id="imgPiedra3" src="assets/img/piedra2.jpg" alt="" width="45%" height="70%">
+        <!-- imagen de papel-->     
             <img class="imgTarjetas" id="imgPapel3" src="assets/img/papel2.jpg" alt="" width="45%" height="70%">
+        <!-- imagen de tijera-->     
             <img class="imgTarjetas" id="imgTijera3" src="assets/img/tijera2.jpg" alt="" width="45%" height="70%">
           </div>
+<!-- Tercera columna vacia-->          
           <div class="col-1">
-            
+        <!-- columna vacia-->    
           </div>
         </div>
+<!-- Boton para saber el resultado-->        
+        <button id="btnResultado" >Resultado</button>
       </div>
 
 

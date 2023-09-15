@@ -1,20 +1,21 @@
 
-
+/* estilo titulo primcipal*/
 h1 {
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    font-size: 305% !important;
-    font-weight: 300px !important;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    color: #ffff !important;
+    text-align: center;   /* para centrar el titulo*/
+    font-family: 'Indie Flower', cursive;  /* tipo de letra*/
+    font-size: 305% !important;  /* tamaño de letra// importat es para que lo tome si o si*/
+    font-weight: 300px !important; /* texto negrita*/
+    padding-bottom: 3%;  /* espacio alrededor del contenido = arriba*/
+    padding-top: 3%;  /* espacio alrededor del contenido = abajo*/
+    color: #ffff !important;  /* color de texto*/
 }
 
+/* para el video de fondo*/
 body {
     position: relative;
     margin: 0;
-  }
-
+}
+/* para el video de fondo*/
 video {
     position: fixed;
     right: 0;
@@ -23,8 +24,10 @@ video {
     min-height: 100%;
     transform: translateX(calc((100% - 100vw) / 2));
     z-index: -2;
-  }
+}
 
+
+/* estilos para el inicio del juego*/
 #inicio{
     padding-top: 4%;
     font-size: 150% !important;
