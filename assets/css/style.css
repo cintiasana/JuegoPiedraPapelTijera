@@ -1,0 +1,107 @@
+
+
+h1 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 305% !important;
+    font-weight: 300px !important;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    color: #ffff !important;
+}
+
+body {
+    position: relative;
+    margin: 0;
+  }
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+  }
+
+#inicio{
+    padding-top: 4%;
+    font-size: 150% !important;
+    color: #ffff;
+    font-family: 'Indie Flower', cursive;
+}
+
+.img {
+    text-align: center;
+    display: flexbox;
+}
+
+
+
+#saludo {
+    display: none;
+    display: flexbox;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 150%;
+    font-family: 'Indie Flower', cursive;
+    color: #ffff;
+}
+
+#opcionElegida {
+    display: none;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 150%;
+    font-family: 'Indie Flower', cursive;
+    color: #ffff;
+    display: flexbox;
+    justify-content: center;
+    
+}
+
+#imgPiedra2{
+    display: none;
+    align-content: center;
+    margin-left: 25%;
+}
+
+#imgPapel2{
+    display: none;
+    align-content: center;
+    margin-left: 25%;
+}
+
+#imgTijera2{
+    display: none;
+    align-content: center;
+    margin-left: 25%;
+}
+
+#imgPiedra3{
+    display: none;
+    align-content: center;
+    align-items: center;
+    display: flexbox;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#imgPapel3{
+    display: none;
+    align-content: center;
+    align-items: center;
+    display: flexbox;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#imgTijera3{
+    display: none;
+    align-content: center;
+    align-items: center;
+    display: flexbox;
+    justify-content: center;
+    margin-left: 25%;
+}
