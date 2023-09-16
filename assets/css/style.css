@@ -27,8 +27,10 @@ video {
 }
 
 
+
+
 /* estilos para el inicio del juego*/
-#inicio{
+#inicio {
     padding-top: 4%;
     font-size: 150% !important;
     color: #ffff;
@@ -50,6 +52,7 @@ video {
     font-size: 150%;
     font-family: 'Indie Flower', cursive;
     color: #ffff;
+    z-index: 150;
 }
 
 #opcionElegida {
@@ -64,25 +67,14 @@ video {
     
 }
 
-#imgPiedra2{
+#imgPiedra2, #imgPapel2, #imgTijera2{
     display: none;
     align-content: center;
     margin-left: 25%;
 }
 
-#imgPapel2{
-    display: none;
-    align-content: center;
-    margin-left: 25%;
-}
 
-#imgTijera2{
-    display: none;
-    align-content: center;
-    margin-left: 25%;
-}
-
-#imgPiedra3{
+#imgPiedra3, #imgPapel3, #imgTijera3 {
     display: none;
     align-content: center;
     align-items: center;
@@ -90,21 +82,23 @@ video {
     justify-content: center;
     margin-left: 25%;
 }
-
-#imgPapel3{
+#reiniciar{
+    position: relative;
     display: none;
-    align-content: center;
-    align-items: center;
+    text-align: center;
+    font-size: 350%;
+    font-family: 'Indie Flower', cursive;
+    z-index: 250;
     display: flexbox;
-    justify-content: center;
-    margin-left: 25%;
+    justify-content: center
+
 }
-
-#imgTijera3{
+#videoEmpate, #videoGanar, #videoPerder{
     display: none;
-    align-content: center;
-    align-items: center;
-    display: flexbox;
-    justify-content: center;
-    margin-left: 25%;
+    right: 0;
+    bottom: 0;
+    width: 150%;
+    height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -100;
 }

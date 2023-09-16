@@ -25,7 +25,7 @@
 
 <body>
 <!--Video de fondo de pantalla-->
-    <video src="assets/img/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+    <video id="videoFondo" src="assets/img/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
 
 <!-- Titulo Principal de la pagina con la animacion-->    
     <h1 class="animate__animated animate__wobble">Desafio Piedra, Papel o Tijera...</h1>
@@ -65,7 +65,7 @@
 
 <!-- Saludo inicial de bienvenida-->      
       <div id="saludo">
-        <strong><p>Bienvenido/a <span id="idJugador" >jugador/a</span>, vamos a comenzar el juego...</p></strong>
+        <strong><p>Bienvenido/a <span id="idJugador">jugador/a</span>, vamos a comenzar el juego...</p></strong>
         <p>Elige una opción:</p>
 <!-- Primera opcion para elegir= Piedra-->      
         <label>Piedra
@@ -96,7 +96,7 @@
             <!-- columna vacia-->
           </div>
 <!-- Segunda columna-->
-          <div class="col-5">
+          <div class="col-5" id="elPc">
 <!-- MUESTRA LA ELECCION DEL USUARIO-->            
             <p>Tú elegiste <span id="opElegida">opcionElegida</span></p>
 <!-- Las imagenes estan ocultas, solo aparece la que se selecciona-->
@@ -108,8 +108,8 @@
             <img class="imgTarjetas" id="imgTijera2" src="assets/img/tijera2.jpg" alt="" width="45%" height="70%">
           </div>
 
-<!-- MUESTRA LA ELECCION DEL USUARIO-->           
-          <div class="col-5">
+<!-- MUESTRA LA ELECCION DE LA PC-->           
+          <div class="col-5" id="elUsuario" >
             <p>Computadora Elige <span id="opcionPC" >PcElige</span></p>
 <!-- Las imagenes estan ocultas, solo aparece de forma aleatoria--> 
         <!-- imagen de piedra-->     
@@ -124,14 +124,32 @@
         <!-- columna vacia-->    
           </div>
         </div>
+        <br>
+        <br>
+        <br>
+
 <!-- Boton para saber el resultado-->        
         <button id="btnResultado" >Resultado</button>
       </div>
+      
+      
+  
+        <video id="videoEmpate" src="assets/img/empate.mp4" autoplay="true" muted="true" loop="true"></video>
+        <video id="videoGanar" src="assets/img/ganar.mp4" autoplay="true" muted="true" loop="true"></video>
+        <video id="videoPerder" src="assets/img/perder.mp4" autoplay="true" muted="true" loop="true"></video>
+
+        <button id="reiniciar">REINICIAR JUEGO</button>
+        
+        
 
 
 
 
-    <script src="js/funciones.js"></script>
+
+      
+
+
+    <script src="js/funciones2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
