@@ -86,11 +86,12 @@ video {
     position: relative;
     display: none;
     text-align: center;
-    font-size: 350%;
+    font-size: 250%;
     font-family: 'Indie Flower', cursive;
     z-index: 250;
     display: flexbox;
-    justify-content: center
+    justify-content: center;
+    margin-top: 15%;
 
 }
 #videoEmpate, #videoGanar, #videoPerder{
