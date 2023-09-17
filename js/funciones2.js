@@ -18,11 +18,11 @@ document.getElementById('btnNomJugador').addEventListener('click', function(nomJ
 
 
 // Boton para seleccionar opcion usuario
-let selecOpcion = document.getElementById('btnSeleccionar')
+var selecOpcion = document.getElementById('btnSeleccionar')
 
 selecOpcion.addEventListener('click', seleccionarOpcion)
 
-let opcionJugador = "";
+var opcionJugador = "";
 function seleccionarOpcion(){
 
     
@@ -79,12 +79,24 @@ if (document.getElementById('btnPiedra').checked){
         document.getElementById('imgTijera3').style.display='block';
     }
         console.log(opcionPC);
+
+
+
     
 // para boton RESULTADO
 
-document.getElementById('btnResultado').addEventListener('click', function(){
+document.getElementById('btnResultado').addEventListener('click', function (){
     document.getElementById('elUsuario').style.display='none';
     document.getElementById('elPc').style.display='none';
     document.getElementById('btnResultado').style.display='none';
     document.getElementById('reiniciar').style.display='block';
+    document.getElementById('reiniciar').style.zIndex='550';
+
+
+    if (opcionPC == opcionJugador);
+        console.log("empate");
+        document.getElementById('videoEmpate').style.display='block';
+        document.getElementById('videoEmpate').style.zIndex='500';
+
+
 });
