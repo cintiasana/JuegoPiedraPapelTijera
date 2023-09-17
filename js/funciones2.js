@@ -125,3 +125,5 @@ document.getElementById('btnResultado').addEventListener('click', function (){
 
 
 });
+
+// boton REINICIAR
