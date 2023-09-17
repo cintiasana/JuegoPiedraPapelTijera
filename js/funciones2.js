@@ -93,10 +93,35 @@ document.getElementById('btnResultado').addEventListener('click', function (){
     document.getElementById('reiniciar').style.zIndex='550';
 
 
-    if (opcionPC == opcionJugador);
+    if (opcionPC == opcionJugador){
         console.log("empate");
         document.getElementById('videoEmpate').style.display='block';
         document.getElementById('videoEmpate').style.zIndex='500';
+    }else if(opcionPC == "Papel" & opcionJugador == "Piedra"){
+        console.log("Pierde");
+        document.getElementById('videoPerder').style.display='block';
+        document.getElementById('videoPerder').style.zIndex='500';
+    }else if(opcionPC == "Tijera" & opcionJugador == "Piedra"){
+        console.log("Gana");
+        document.getElementById('videoGanar').style.display='block';
+        document.getElementById('videoGanar').style.zIndex='500';
+    }else if(opcionPC == "Piedra" & opcionJugador == "Papel"){
+        console.log("Gana");
+        document.getElementById('videoGanar').style.display='block';
+        document.getElementById('videoGanar').style.zIndex='500';
+    }else if(opcionPC == "Tijera" & opcionJugador == "Papel"){
+        console.log("Perder");
+        document.getElementById('videoPerder').style.display='block';
+        document.getElementById('videoPerder').style.zIndex='500';
+    }else if(opcionPC == "Piedra" & opcionJugador == "Tijera"){
+        console.log("Perder");
+        document.getElementById('videoPerder').style.display='block';
+        document.getElementById('videoPerder').style.zIndex='500';
+    }else if(opcionPC == "Papel" & opcionJugador == "Tijera"){
+        console.log("Gana");
+        document.getElementById('videoGanar').style.display='block';
+        document.getElementById('videoGanar').style.zIndex='500';
+    }
 
 
 });
