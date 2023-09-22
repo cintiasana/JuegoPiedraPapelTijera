@@ -103,3 +103,5 @@ video {
     transform: translateX(calc((100% - 100vw) / 2));
     z-index: -100;
 }
+
+/* efecto para boton*/
